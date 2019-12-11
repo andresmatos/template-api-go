@@ -47,7 +47,7 @@ func (p *customerRepo) Store(pt *customer.Customer) error {
 }
 
 func (p *customerRepo) Update(pt *customer.Customer) error {
-	err := p.db.Model(&pt).Updates(customer.Customer{FirstName: pt.FirstName, LastName: pt.LastName, Email: pt.Email, Age: pt.Age, Address: pt.Address}).Error
+	err := p.db.Model(&pt).Updates(customer.Customer{FirstName: pt.FirstName, LastName: pt.LastName, Email: pt.Email,Address: pt.Address}).Error
 	if err != nil {
 		return errors.New("error while updating the customer")
 	}
