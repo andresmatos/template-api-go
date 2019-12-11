@@ -4,7 +4,7 @@ consumes:
 host: some-url.com
 info:
   description: Documentation of our awesome API.
-  title: ws-it-assets.
+  title: apptest.
   version: 1.0.0
 paths: {}
 produces:

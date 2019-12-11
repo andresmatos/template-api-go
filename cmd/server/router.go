@@ -28,7 +28,7 @@ func (s *server) healthRoutes(api *gin.RouterGroup) {
 
 
 func (s *server) customerRoutes(api *gin.RouterGroup) {
-	customerRoutes := api.Group("/users")
+	customerRoutes := api.Group("/customers")
 	{
 		var cSvc customer.Service
 		s.cont.Invoke(func(u customer.Service) {
