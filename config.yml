@@ -1,0 +1,15 @@
+appname: ws-it-assets2
+port: 8080
+
+db:
+    postgres:
+        enabled: true
+        host: 127.0.0.1
+        port: 5432
+        username: postgres
+        password: postgres
+        database: apptest-db
+
+contacts:
+    name: 'Andres Matos'
+    email: andres.matos@spsa.pe
